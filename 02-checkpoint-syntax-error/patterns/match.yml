@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: |
+        "Hello, World!"
+    - pattern-inside: Console.WriteLine(...);
+  message: <pass>
+  languages: [generic]
+  severity: INFO

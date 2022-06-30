@@ -1,0 +1,6 @@
+rules:
+- id: untitled_rule
+  pattern: int age = 45;
+  message: <pass>
+  languages: [generic]
+  severity: INFO

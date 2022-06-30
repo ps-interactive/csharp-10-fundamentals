@@ -1,0 +1,6 @@
+rules:
+- id: untitled_rule
+  pattern: string input = Console.ReadLine();
+  message: <pass>
+  languages: [generic]
+  severity: INFO

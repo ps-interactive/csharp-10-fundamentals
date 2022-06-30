@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern-either:
+      - pattern: decimal price = 100.0m;
+      - pattern: decimal price = 100.0M;
+  message: <pass>
+  languages: [generic]
+  severity: INFO

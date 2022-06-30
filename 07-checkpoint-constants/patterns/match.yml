@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern-either:
+      - pattern: const double profitMargin = 0.17d;
+      - pattern: const double profitMargin = 0.17D;
+  message: <pass>
+  languages: [generic]
+  severity: INFO

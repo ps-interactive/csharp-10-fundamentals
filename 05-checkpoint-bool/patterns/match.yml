@@ -1,0 +1,6 @@
+rules:
+- id: untitled_rule
+  pattern: bool isActive = false;
+  message: <pass>
+  languages: [generic]
+  severity: INFO

@@ -1,0 +1,6 @@
+rules:
+- id: untitled_rule
+  pattern: string greeting = "Hello";
+  message: <pass>
+  languages: [generic]
+  severity: INFO
