@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      int[] myValues = new int[] { 5, 15, 25, 35, 45 };
+      int length = myValues.Length;  
+      ...
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

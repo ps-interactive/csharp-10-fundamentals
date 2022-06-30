@@ -1,0 +1,22 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public class Vehicle
+      {
+          private int currentMileage;
+      
+          public int CurrentMileage
+          {
+              get 
+              {
+                  return currentMileage;
+              }
+              set 
+              {
+                  currentMileage = value;
+              }
+          }
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: public static double bonusPercentage = 0.15;
+    - pattern-inside: public class Employee { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

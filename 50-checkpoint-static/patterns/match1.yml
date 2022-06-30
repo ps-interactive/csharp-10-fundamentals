@@ -1,0 +1,12 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: |
+        public static void UpdateBonusPercentage(double newPercentage)
+        {
+            bonusPercentage = newPercentage;
+        }
+    - pattern-inside: public class Employee { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

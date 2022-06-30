@@ -1,0 +1,6 @@
+rules:
+- id: untitled_rule
+  pattern: public static int CalculateYearlyWage(int monthlyWage, int months) => monthlyWage * months;
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

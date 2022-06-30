@@ -1,0 +1,28 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public static List<Vehicle> ReadVehicles(string fileName)
+      {
+        try
+        {
+          ...
+        }
+        catch (IndexOutOfRangeException $E)
+        {
+            Console.WriteLine($E.Message);
+            return null;
+        }
+        catch (FileNotFoundException $E1)
+        {
+            Console.WriteLine($E1.Message);
+            return null;
+        }
+        catch(Exception $E2)
+        {
+          Console.WriteLine($E2.Message);
+          return null;
+        }
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      Employee.UpdateBonusPercentage(0.17);
+      ...
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

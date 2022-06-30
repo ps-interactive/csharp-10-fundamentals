@@ -1,0 +1,10 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      using Library;
+      WageCalculations wageCalculations = new WageCalculations();
+      double d = wageCalculations.RandomWageGenerator();
+      ...
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

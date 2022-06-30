@@ -1,0 +1,14 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern-either:
+      - pattern: |
+          string greeting = string.Empty;
+          greeting = $"Hello {employeeName}, you are {age} years";
+          return greeting;
+      - pattern: |
+          string greeting = $"Hello {employeeName}, you are {age} years";
+          return greeting;
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      string vehicles = "BMW\nToyota\nMercedes";
+      File.WriteAllText(path, vehicles);
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

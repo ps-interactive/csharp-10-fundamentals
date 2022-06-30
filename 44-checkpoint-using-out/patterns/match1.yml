@@ -1,0 +1,6 @@
+rules:
+- id: untitled_rule
+  pattern: public int CalculateBonusAndTax(int bonus, out int tax) { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

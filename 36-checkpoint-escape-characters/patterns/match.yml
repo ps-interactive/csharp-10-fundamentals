@@ -1,0 +1,14 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern-either:
+      - pattern: |
+          string result = string.Empty;
+          result = "Hello\nEveryone";
+          return result;
+      - pattern: |
+          string result = "Hello\nEveryone";
+          return result;
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

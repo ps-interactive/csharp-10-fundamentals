@@ -1,0 +1,32 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public static List<Vehicle> ReadVehicles(string fileName)
+      {
+        try
+        {
+          ...
+        }
+        catch (IndexOutOfRangeException $E)
+        {
+            Console.WriteLine($E.Message + " " + $E.StackTrace);
+            return null;
+        }
+        catch (FileNotFoundException $E1)
+        {
+            Console.WriteLine($E1.Message + " " + $E1.StackTrace);
+            return null;
+        }
+        catch(Exception $E2)
+        {
+          Console.WriteLine($E2.Message + " " + $E2.StackTrace);
+          return null;
+        }
+        finally 
+        {
+          Console.WriteLine("All done parsing");
+        }
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

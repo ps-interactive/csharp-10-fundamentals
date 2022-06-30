@@ -1,0 +1,11 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public interface IVehicle
+      {
+          void Drive();
+          void Drive(int miles);
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

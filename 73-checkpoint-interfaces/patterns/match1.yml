@@ -1,0 +1,7 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public class Vehicle: IVehicle { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

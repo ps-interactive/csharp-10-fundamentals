@@ -1,0 +1,14 @@
+rules:
+- id: untitled_rule
+  patterns:
+  - pattern-either:
+    - pattern: |
+        string c = string.Empty;
+        c = a + " " + b;
+        return c;
+    - pattern: |
+        string c = a + " " + b;
+        return c;
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

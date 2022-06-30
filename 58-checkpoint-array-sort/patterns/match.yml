@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      int[] unsortedValues = new int[] { 44, 46, 1, 6664, 123, 999 };
+      Array.Sort(unsortedValues);
+      ...
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

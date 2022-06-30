@@ -1,0 +1,11 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public struct ToDo
+      {
+          public string description;
+          public bool done;
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

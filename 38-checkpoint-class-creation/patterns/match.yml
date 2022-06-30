@@ -1,0 +1,13 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: |
+        public void DisplayEmployeeDetails()
+            {
+                Console.WriteLine($"Employee name: {name} - Age: {age} - Number of hours worked: {numberOfHoursWorked}");
+            }
+    - pattern-inside: public class Employee { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO
+

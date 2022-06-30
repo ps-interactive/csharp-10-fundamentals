@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      bool a = false;
+      a = input.Contains("Goodbye");
+      return a;
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

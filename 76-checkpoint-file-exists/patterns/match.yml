@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      string path = @"D:\data\vehiclelist.txt";
+      bool fileExists = File.Exists(path);
+      ...
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

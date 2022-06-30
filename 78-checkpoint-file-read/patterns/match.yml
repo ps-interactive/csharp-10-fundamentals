@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      string path = Path.Combine(Environment.CurrentDirectory, fileName);
+      string[] vehicles = File.ReadAllLines(path);
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

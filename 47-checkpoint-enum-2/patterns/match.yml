@@ -1,0 +1,12 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public enum Colors
+      {
+          Red = 5,
+          Green = 8,
+          Blue = 10,
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

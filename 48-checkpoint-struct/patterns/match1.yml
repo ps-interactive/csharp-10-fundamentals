@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      ToDo newToDo;
+      newToDo.description = "Buy milk";
+      newToDo.done = false;
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

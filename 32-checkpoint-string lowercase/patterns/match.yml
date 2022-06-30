@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      string b = "Welcome to thIs AweSomE CouRse!";
+      string a = b.ToLower();
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

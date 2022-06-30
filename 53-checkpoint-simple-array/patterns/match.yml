@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      int[] myValues = new int[5];
+      ...
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

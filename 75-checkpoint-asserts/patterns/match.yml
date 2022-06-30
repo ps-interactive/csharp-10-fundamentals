@@ -1,0 +1,12 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      [Fact]
+      public void Drive_Adds_Miles()
+      {
+        ...
+        Assert.Equal(1, vehicle.CurrentMileage);
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

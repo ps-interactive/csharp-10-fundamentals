@@ -1,0 +1,17 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public static List<Vehicle> ReadVehicles(string fileName)
+      {
+        try
+        {
+          ...
+        }
+        catch(Exception ex)
+        {
+          return null;
+        }
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

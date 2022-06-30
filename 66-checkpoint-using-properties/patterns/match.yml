@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      Vehicle vehicle = new Vehicle();
+      vehicle.CurrentMileage = 100;
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

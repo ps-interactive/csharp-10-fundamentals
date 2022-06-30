@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      Car car1 = new Car(10, "BMW", "Black", 8 );
+      car1.Drive(10);
+      ...
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

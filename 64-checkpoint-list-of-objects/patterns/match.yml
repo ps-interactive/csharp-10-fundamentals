@@ -1,0 +1,14 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      Vehicle v5 = new Vehicle(0, "Fiat", "Red");
+      
+      List<Vehicle> vehicles = new List<Vehicle>();
+      vehicles.Add(v1);
+      vehicles.Add(v2);
+      vehicles.Add(v3);
+      vehicles.Add(v4);
+      vehicles.Add(v5);
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

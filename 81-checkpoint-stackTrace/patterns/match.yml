@@ -1,0 +1,18 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public static List<Vehicle> ReadVehicles(string fileName)
+      {
+        try
+        {
+          ...
+        }
+        catch(Exception $E)
+        {
+          Console.WriteLine($E.Message + " " + $E.StackTrace);
+          return null;
+        }
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

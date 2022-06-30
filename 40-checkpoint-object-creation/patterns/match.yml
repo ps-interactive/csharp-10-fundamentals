@@ -1,0 +1,6 @@
+rules:
+- id: untitled_rule
+  pattern: Employee employee1 = new Employee();
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

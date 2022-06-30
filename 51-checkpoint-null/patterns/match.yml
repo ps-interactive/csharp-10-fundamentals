@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      Employee employee = new Employee("Gill", 42, 10);
+      employee = null; 
+      ...
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

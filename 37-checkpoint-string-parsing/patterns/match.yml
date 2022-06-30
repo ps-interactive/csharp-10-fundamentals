@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      string input = Console.ReadLine();
+      int i = int.Parse(input);
+      Console.ReadLine();
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

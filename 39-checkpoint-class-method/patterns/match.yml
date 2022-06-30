@@ -1,0 +1,15 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: |
+        public void Work(int hours, bool resetHours)
+        {
+          if (resetHours)
+            numberOfHoursWorked = 0;
+            numberOfHoursWorked += hours;
+        }
+    - pattern-inside: public class Employee { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO
+
