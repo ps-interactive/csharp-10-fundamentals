@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      int sum = AddNumbers(5, 2);
+      static int AddNumbers(int a, int b) { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

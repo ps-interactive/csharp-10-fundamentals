@@ -1,0 +1,7 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      char aChar = 'b';
+  message: <pass>
+  languages: [generic]
+  severity: INFO

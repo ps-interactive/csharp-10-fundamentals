@@ -1,0 +1,18 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern-either:
+      - pattern: |
+          static int SubtractTwoNumbers(int a, int b)
+          {
+              return a - b;
+          }
+      - pattern: |
+          static int SubtractTwoNumbers(int a, int b)
+          {
+              var $V = a - b;
+              return $V;
+          }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

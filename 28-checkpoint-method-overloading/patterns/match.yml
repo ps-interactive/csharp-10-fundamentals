@@ -1,0 +1,21 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern-either:
+      - pattern: |
+          public class Utilities
+          {
+              public static int AddNumbers(int a, int b) { ... }
+          
+              public static int AddNumbers(int a, int b, int c) { ... }
+          }
+      - pattern: |
+          public class Utilities
+          {
+              public static int AddNumbers(int a, int b, int c) { ... }
+          
+              public static int AddNumbers(int a, int b) { ... }
+          }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

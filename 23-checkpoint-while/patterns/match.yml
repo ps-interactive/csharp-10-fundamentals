@@ -1,0 +1,19 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern-either:
+      - pattern: |
+          Console.WriteLine($I);
+          $I++;
+      - pattern: |
+          Console.WriteLine($I);
+          $I += 1;
+      - pattern: |
+          Console.WriteLine($I);
+          $I = $I + 1;
+    - pattern-inside: |
+        int $I = 1;
+        while ($I <= 10) { ... }
+  message: <pass>
+  languages: [generic]
+  severity: INFO

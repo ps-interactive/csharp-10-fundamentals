@@ -1,0 +1,6 @@
+rules:
+- id: untitled_rule
+  pattern: int $S = Utilities.SubtractTwoNumbers($A, $B);
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

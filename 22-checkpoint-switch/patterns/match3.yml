@@ -1,0 +1,14 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: |
+        default:
+        Console.WriteLine("All good");
+        break;
+    - pattern-inside: |
+        int age = 25;
+        switch (age) { ... }
+  message: <pass>
+  languages: [generic]
+  severity: INFO
+

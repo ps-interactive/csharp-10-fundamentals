@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      DateTime startDate = new DateTime(2022, 03, 05);
+      DateTime endDate = DateTime.Today;
+  message: <pass>
+  languages: [generic]
+  severity: INFO

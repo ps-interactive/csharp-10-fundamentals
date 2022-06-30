@@ -1,0 +1,7 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      var a = 10;
+  message: <pass>
+  languages: [generic]
+  severity: INFO

@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      char aChar = 'a';
+      bool isWhiteSpace = char.IsWhiteSpace(aChar);
+  message: <pass>
+  languages: [generic]
+  severity: INFO

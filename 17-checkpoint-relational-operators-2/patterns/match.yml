@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      int $V = 72;
+      bool validAge = $V <= 65;
+  message: <pass>
+  languages: [generic]
+  severity: INFO

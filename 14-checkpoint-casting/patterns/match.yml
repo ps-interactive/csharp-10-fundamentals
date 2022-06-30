@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      long myLargeValue = 123456789;
+      int intValue = (int)myLargeValue;
+  message: <pass>
+  languages: [generic]
+  severity: INFO
