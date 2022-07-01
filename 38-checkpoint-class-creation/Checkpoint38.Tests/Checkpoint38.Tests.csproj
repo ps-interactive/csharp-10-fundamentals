@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Checkpoint 38 - Class creation\Checkpoint38.csproj" />
+    <ProjectReference Include="..\Checkpoint38\Checkpoint38.csproj" />
   </ItemGroup>
 
 </Project>
