@@ -1,0 +1,1 @@
+﻿const double profitMargin = 0.17d;

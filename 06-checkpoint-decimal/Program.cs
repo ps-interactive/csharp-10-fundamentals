@@ -1,0 +1,1 @@
+﻿decimal price = 100.0m;
