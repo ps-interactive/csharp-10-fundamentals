@@ -1,4 +1,4 @@
-﻿internal class Employee
+﻿public class Employee
 {
     public string name;
     public int age;
