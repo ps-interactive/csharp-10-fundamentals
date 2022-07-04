@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      using Shop.Medium;
+      ...
+      Suv suv = new Suv();
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

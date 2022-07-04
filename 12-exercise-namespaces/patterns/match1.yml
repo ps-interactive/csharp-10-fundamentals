@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: public class Suv {}
+    - pattern-inside: namespace Shop.Medium { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

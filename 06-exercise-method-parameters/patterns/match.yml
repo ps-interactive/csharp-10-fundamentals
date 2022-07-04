@@ -1,0 +1,19 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: |
+        public static int CalculateYearlyWage(int $A, bool $B = true)
+            {
+                if ($B)
+                {
+                    return $A * 12 + 1000;
+                }
+                else
+                {
+                    return $A * 12;
+                }
+            }
+    - pattern-inside: public class Utilities { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

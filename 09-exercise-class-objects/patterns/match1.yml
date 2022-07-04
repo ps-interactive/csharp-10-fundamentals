@@ -1,0 +1,21 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: |
+        public Vehicle(int $A, string $B, string $C) { 
+          this.currentMileage = $A;
+          this.model = $B;
+          this.color = $C;
+        }
+    - pattern-inside: |
+        public class Vehicle
+        {
+            public int currentMileage;
+            public string model;
+            public string color;
+        
+            ...
+        }
+  message: <pass>
+  languages: [generic]
+  severity: INFO

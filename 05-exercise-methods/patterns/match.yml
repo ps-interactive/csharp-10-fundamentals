@@ -1,0 +1,16 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: |
+        public static int MultiplyTwoNumbers(int $A, int $B)
+        {
+          if ($A < 0 || $B < 0)
+          {
+            return -1;
+          }
+            return $A * $B;
+        }
+    - pattern-inside: public class Utilities { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

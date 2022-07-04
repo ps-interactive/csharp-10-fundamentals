@@ -1,0 +1,17 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      Console.WriteLine(...);
+      int $S = 0;
+      
+      string $A = Console.ReadLine();
+      int $B = int.Parse($A);
+      
+      for (int $I = $B; $I > 0;$I--) {
+        $S += $I;
+      }
+      
+      Console.WriteLine("The sum is " + $S);
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

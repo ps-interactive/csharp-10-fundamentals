@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      Console.WriteLine(...);
+      string $V = Console.ReadLine();
+      Console.WriteLine("Hello " + $V);
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

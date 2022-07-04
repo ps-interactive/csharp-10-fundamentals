@@ -1,0 +1,13 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public class Daisy : Flower
+      {
+          public Daisy(string name, int petals, int leafs) 
+              : base(name, petals, leafs)
+          {
+          }
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

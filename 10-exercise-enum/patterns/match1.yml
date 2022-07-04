@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: public VehicleType vehicleType;
+    - pattern-inside: public class Vehicle { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

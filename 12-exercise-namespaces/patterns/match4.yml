@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      using Shop.Large;
+      ...
+      Truck truck = new Truck();
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

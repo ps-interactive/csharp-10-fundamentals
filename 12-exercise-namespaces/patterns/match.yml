@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: public class Truck {}
+    - pattern-inside: namespace Shop.Large { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO
+

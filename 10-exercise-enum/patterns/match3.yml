@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: Vehicle vehicle = new Vehicle(100, "BMW", "Black", VehicleType.Car);
+    - pattern-inside: public static Vehicle CreateAndUseVehicle() { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

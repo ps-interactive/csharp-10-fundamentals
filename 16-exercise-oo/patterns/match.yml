@@ -1,0 +1,27 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public class Flower
+      {
+          private int petals;
+          private int leafs;
+          private string name;
+          private int height = 0;
+      
+          public Flower(string name, int petals, int leafs)
+          {
+              Petals = petals;
+              Leafs = leafs;
+              Name = name;
+          }
+      
+          public int Petals { ... }
+          public int Leafs { ... }
+          public string Name { ... }
+          public int Height { ... }
+          public void Grow() { ... }
+          public string DisplayDetails() { ... }
+      }
+  message: <pass>
+  languages: [generic]
+  severity: INFO

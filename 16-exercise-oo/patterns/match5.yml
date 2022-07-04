@@ -1,0 +1,13 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: |
+        public override void Grow()
+        {
+          Height += 2;
+        }
+    - pattern-inside: |
+        public class SunFlower : Flower { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

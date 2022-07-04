@@ -1,0 +1,13 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public enum VehicleType
+      { 
+          Car,
+          Van,
+          Truck
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO
+

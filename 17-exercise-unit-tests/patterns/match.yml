@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      using Xunit;
+      ...
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

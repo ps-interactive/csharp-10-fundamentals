@@ -1,0 +1,15 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public class Vehicle
+      {
+          public static int maxSpeed = 100;
+      
+          public static void IncreaseMaxSpeed(int amount)
+          {
+              maxSpeed += amount;
+          }
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

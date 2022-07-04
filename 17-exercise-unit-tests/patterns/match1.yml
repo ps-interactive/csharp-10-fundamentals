@@ -1,0 +1,10 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: |
+        [Fact]
+        public void Grow_Adds_DefaultNumber() { ... }
+    - pattern-inside: public class FlowerTests { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

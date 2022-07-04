@@ -1,0 +1,26 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern-either:
+      - pattern: |
+          public struct Product 
+          {
+              public double basePrice;
+              public string name;
+          
+              public double CalculateSalePrice()
+              {
+                  return basePrice * 1.17;
+              }
+          }
+      - pattern: |
+          public struct Product 
+          {
+              public double basePrice;
+              public string name;
+          
+              public double CalculateSalePrice() => basePrice * 1.17;
+          }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

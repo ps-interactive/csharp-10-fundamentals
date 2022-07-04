@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: public class Van {}
+    - pattern-inside: namespace Shop.Medium { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO
+

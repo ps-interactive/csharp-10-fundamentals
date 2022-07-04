@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      using Shop.Small;
+      ...
+      CityCar cityCar = new CityCar();
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

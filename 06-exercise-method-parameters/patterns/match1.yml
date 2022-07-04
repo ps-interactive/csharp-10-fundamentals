@@ -1,0 +1,8 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      int yearlyWage = Utilities.CalculateYearlyWage(1000);
+      Console.ReadLine();
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

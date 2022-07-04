@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      using Shop.Medium;
+      ...
+      Van van = new Van();
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

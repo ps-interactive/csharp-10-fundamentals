@@ -1,0 +1,15 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: |
+        ...
+        Flower $F = new Flower(...);
+        $F.Height = 0;
+        ...
+        $F.Grow();
+        ...
+        Assert.Equal(1, $F.Height);
+    - pattern-inside: public void Grow_Adds_DefaultNumber() { ... }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO
