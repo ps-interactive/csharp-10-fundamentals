@@ -1,3 +1,0 @@
-﻿BMW;Black;10
-Toyota;Red;455
-Mercedes;Green;1000
