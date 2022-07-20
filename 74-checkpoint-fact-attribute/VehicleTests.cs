@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-public class EmployeeTests
+public class VehicleTests
 {
     public void Drive_Adds_Miles()
     {
