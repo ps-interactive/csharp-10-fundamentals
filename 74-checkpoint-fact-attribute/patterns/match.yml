@@ -2,7 +2,7 @@ rules:
 - id: untitled_rule
   pattern: |
       using Xunit;
-      public class EmployeeTests
+      public class VehicleTests
       {
           [Fact]
           public void Drive_Adds_Miles() { ... }
