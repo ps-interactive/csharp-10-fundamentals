@@ -1,32 +1,31 @@
-rules:
-- id: untitled_rule
-  pattern: |
-      public class Car : Vehicle
-      {
-          public Car(int currentMileage, string model, string color, int numberOfGears) : base(currentMileage, model, color)
-          {
-              NumberOfGears = numberOfGears;
-          }
-      
-          private int numberOfGears;
-      
-          public int NumberOfGears
-          {
-              get
-              {
-                  return numberOfGears;
-              }
-              set
-              {
-                  numberOfGears = value;
-              }
-          }
-      
-          public void SoundCarHorn()
-          {
-              SoundHorn();
-          }
-      }
-  message: <pass>
-  languages: [csharp]
-  severity: INFO
+id: untitled_rule
+pattern: |
+    public class Car : Vehicle
+    {
+        public Car(int currentMileage, string model, string color, int numberOfGears) : base(currentMileage, model, color)
+        {
+            NumberOfGears = numberOfGears;
+        }
+    
+        private int numberOfGears;
+    
+        public int NumberOfGears
+        {
+            get
+            {
+                return numberOfGears;
+            }
+            set
+            {
+                numberOfGears = value;
+            }
+        }
+    
+        public void SoundCarHorn()
+        {
+            SoundHorn();
+        }
+    }
+message: Semgrep found a match
+languages: [csharp]
+severity: WARNING

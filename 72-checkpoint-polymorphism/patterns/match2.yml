@@ -1,22 +1,23 @@
-rules:
-- id: untitled_rule
-  pattern: |
-      public class SportsCar : Vehicle
-      {
-          public SportsCar(int currentMileage, string model, string color) : base(currentMileage, model, color)
-          {
-          }
-      
-          public override void Drive()
-          {
-              CurrentMileage += 2;
-          }
-      
-          public override void Drive(int miles)
-          {
-              CurrentMileage += 2 * miles;
-          }
-      }
-  message: <pass>
-  languages: [csharp]
-  severity: INFO
+id: untitled_rule
+pattern: |
+    
+    public class SportsCar : Vehicle
+    {
+        public SportsCar(int currentMileage, string model, string color) : base(currentMileage, model, color)
+        {
+        }
+    
+        public override void Drive()
+        {
+            CurrentMileage += 2;
+        }
+    
+        public override void Drive(int miles)
+        {
+            CurrentMileage += 2 * miles;
+        }
+    }
+    
+message: Semgrep found a match
+languages: [csharp]
+severity: WARNING

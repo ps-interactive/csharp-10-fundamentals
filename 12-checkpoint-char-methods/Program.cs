@@ -1,1 +1,1 @@
-﻿char aChar = 'a';
+﻿
