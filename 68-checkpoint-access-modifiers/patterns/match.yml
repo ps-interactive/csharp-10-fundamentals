@@ -1,5 +1,6 @@
-id: untitled_rule
-pattern: |
+rules:
+- id: untitled_rule
+  pattern: |
     public class Vehicle
     {
         private int currentMileage;
@@ -65,6 +66,6 @@ pattern: |
             return $"Model: {Model} - Color: {Color} - Current mileage: {CurrentMileage}";
         }
     }
-message: Semgrep found a match
-languages: [csharp]
-severity: WARNING
+  message: Semgrep found a match
+  languages: [csharp]
+  severity: WARNING
