@@ -1,13 +1,13 @@
 rules:
-- id: untitled_rule
-  patterns:
+  - id: untitled_rule
+    patterns:
     - pattern-either:
       - pattern: |
           int age = 33;
           bool validAge = (age >= 18) && (age <= 65);
       - pattern: |
           int age = 33;
-          bool validAge = (age <= 65) && (age >= 18);
-  message: <pass>
-  languages: [csharp]
-  severity: INFO
+          bool validAge = (age <= 65) && (age >= 18);    
+    message: <pass>
+    languages: [csharp]
+    severity: WARNING
