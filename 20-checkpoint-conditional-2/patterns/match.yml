@@ -1,18 +1,28 @@
 rules:
-- id: untitled_rule
-  pattern: |
-      int $A = 45;
-      
-      if ($A > 18)
-      {
-          Console.WriteLine("You are eligible");
-          Console.WriteLine("Congratulations");
-      }
-      else
-      {
-          Console.WriteLine("You aren't eligible");
-          Console.WriteLine("Sorry");
-      }
-  message: <pass>
-  languages: [csharp]
-  severity: INFO
+  - id: untitled_rule
+    patterns:
+      - pattern: |
+            int $A = 45;
+            if ($A > 18) { 
+                Console.WriteLine("You are eligible");
+                Console.WriteLine("Congratulations");
+            }
+            else
+            {
+                Console.WriteLine("You aren't eligible");
+                Console.WriteLine("Sorry");
+            }
+      - pattern: |
+            int $A = 45;
+            if (18 < $A) { 
+                Console.WriteLine("You are eligible");
+                Console.WriteLine("Congratulations");
+            }
+            else
+            {
+                Console.WriteLine("You aren't eligible");
+                Console.WriteLine("Sorry");
+            }
+    message: <pass>
+    languages: [csharp]
+    severity: WARNING
