@@ -1,17 +1,12 @@
 rules:
-- id: untitled_rule
-  patterns:
-    - pattern: public Vehicle() {}
-    - pattern-inside: |
-        public class Vehicle
-        {
-            public int currentMileage;
-            public string model;
-            public string color;
-        
-            ...
-        }
-  message: <pass>
-  languages: [csharp]
-  severity: INFO
-
+  - id: untitled_rule
+    patterns:
+      - pattern: public class Vehicle
+          {
+          public int currentMileage;
+          public string model;
+          public string color;
+          }
+    message: <pass>
+    languages: [csharp]
+    severity: INFO
