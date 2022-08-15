@@ -1,8 +1,13 @@
 rules:
-- id: untitled_rule
-  pattern: |
-      int $V = 17;
-      bool validAge = $V > 18;
+  - id: untitled_rule
+    patterns:
+      - pattern-either:
+        - pattern: |
+          int $V = 17;
+          bool validAge = $V > 18;
+        - pattern: |
+          int $V = 17;
+          bool validAge = 18 < $V;
   message: <pass>
-  languages: [generic]
-  severity: INFO
+  languages: [csharp]
+  severity: WARNING
