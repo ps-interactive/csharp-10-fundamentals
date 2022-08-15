@@ -1,5 +1,6 @@
-id: untitled_rule
-pattern: |
+rules:
+- id: untitled_rule
+  pattern: |
     public class Car : Vehicle
     {
         public Car(int currentMileage, string model, string color, int numberOfGears) 
@@ -22,6 +23,6 @@ pattern: |
             }
         }
     }
-message: Semgrep found a match
-languages: [csharp]
-severity: WARNING
+  message: Semgrep found a match
+  languages: [csharp]
+  severity: WARNING
