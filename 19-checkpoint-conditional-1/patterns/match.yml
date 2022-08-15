@@ -9,7 +9,7 @@ rules:
             }
       - pattern: |
             int $A = 33;
-            if (18 <= $A) { 
+            if (18 < $A) { 
                 Console.WriteLine("You are eligible");
                 Console.WriteLine("Congratulations");
             }
