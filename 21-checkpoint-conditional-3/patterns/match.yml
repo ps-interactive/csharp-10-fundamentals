@@ -1,10 +1,16 @@
 rules:
-- id: untitled_rule
-  patterns:
-    - pattern: |
-        Console.WriteLine("You are eligible");
-        Console.WriteLine("Congratulations");
-    - pattern-inside: if (age == 18) { ... }
-  message: <pass>
-  languages: [generic]
-  severity: INFO
+  - id: untitled_rule
+    patterns:
+      - pattern: |
+            if ($A == 18) { 
+                Console.WriteLine("You are eligible");
+                Console.WriteLine("Congratulations");
+            }
+      - pattern: |
+            if (18 == $A) { 
+                Console.WriteLine("You are eligible");
+                Console.WriteLine("Congratulations");
+            }
+    message: <pass>
+    languages: [csharp]
+    severity: WARNING
