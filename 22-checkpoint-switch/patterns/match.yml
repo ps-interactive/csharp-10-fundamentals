@@ -1,13 +1,13 @@
 rules:
-- id: untitled_rule
-  patterns:
-    - pattern: |
-        case > 65:
-        Console.WriteLine("You are too old");
-        break;
-    - pattern-inside: |
-        int age = 25;
-        switch (age) { ... }
-  message: <pass>
-  languages: [generic]
-  severity: INFO
+  - id: untitled_rule
+    patterns:
+      - pattern: |
+          case > 65:
+          Console.WriteLine("You are too old");
+          break;
+      - pattern-inside: |
+          int $A = 25;
+          switch ($A) { ... }
+    message: <pass>
+    languages: [generic]
+    severity: WARNING
