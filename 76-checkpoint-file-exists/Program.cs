@@ -3,6 +3,3 @@
 
 
 
-
-
-Console.ReadLine();
