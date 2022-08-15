@@ -1,5 +1,6 @@
-id: untitled_rule
-pattern: |
+rules:
+- id: untitled_rule
+  pattern: |
     public class Vehicle
     {
         private int currentMileage;
@@ -70,6 +71,6 @@ pattern: |
             Console.WriteLine("HONK");
         }
     }
-message: Semgrep found a match
-languages: [csharp]
-severity: WARNING
+  message: Semgrep found a match
+  languages: [csharp]
+  severity: WARNING
