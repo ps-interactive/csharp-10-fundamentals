@@ -1,0 +1,16 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: |
+          public override void Drive(int miles)
+          {
+              CurrentMileage += 2 * miles;
+          }
+    - pattern-inside: |
+        public class SportsCar : Vehicle
+        {
+          ...
+        }
+  message: Semgrep found a match
+  languages: [csharp]
+  severity: WARNING
