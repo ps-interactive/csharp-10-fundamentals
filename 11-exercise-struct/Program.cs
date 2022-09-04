@@ -2,5 +2,6 @@
 
 double salePrice = Utilities.GetSalePrice();
 
+Console.WriteLine("Sale price: " + salePrice);  
 
 Console.ReadLine(); 

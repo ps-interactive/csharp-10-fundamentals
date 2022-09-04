@@ -14,4 +14,6 @@ vehicles.Add(v5);
 
 int sum = Utilities.CalculateSumOfMilesDriven(vehicles);
 
+Console.WriteLine("Sum of miles driven is " + sum);
+
 Console.ReadLine();

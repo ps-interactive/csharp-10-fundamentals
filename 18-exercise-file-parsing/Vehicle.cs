@@ -58,7 +58,7 @@
             CurrentMileage += miles;
     }
 
-    private string DisplayVehicleDetails()
+    public string DisplayVehicleDetails()
     {
         return $"Model: {Model} - Color: {Color} - Current mileage: {CurrentMileage}";
     }
