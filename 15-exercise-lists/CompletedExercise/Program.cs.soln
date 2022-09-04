@@ -1,5 +1,4 @@
-﻿
-Vehicle v1 = new Vehicle(10, "BMW", "Red");
+﻿Vehicle v1 = new Vehicle(10, "BMW", "Red");
 Vehicle v2 = new Vehicle(45, "Toyota", "Blue");
 Vehicle v3 = new Vehicle(987, "Renault", "Black");
 Vehicle v4 = new Vehicle(45643, "Volkswagen", "Green");
@@ -13,5 +12,7 @@ vehicles.Add(v4);
 vehicles.Add(v5);
 
 int sum = Utilities.CalculateSumOfMilesDriven(vehicles);
+
+Console.WriteLine("Sum of miles driven is " + sum);
 
 Console.ReadLine();

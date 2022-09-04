@@ -15,4 +15,9 @@ vehicles.Add(v5);
 
 Utilities.WriteVehicles(vehicles);
 
+foreach (var item in vehicles)
+{
+    Console.WriteLine(item.DisplayVehicleDetails());
+}
+
 Console.ReadLine();
