@@ -7,6 +7,14 @@ rules:
       Vehicle v4 = new Vehicle(45643, "Volkswagen", "Green");
       Vehicle v5 = new Vehicle(0, "Fiat", "Red");
       
+      List<Vehicle> vehicles = new List<Vehicle>();
+      vehicles.Add(v1);
+      vehicles.Add(v2);
+      vehicles.Add(v3);
+      vehicles.Add(v4);
+      vehicles.Add(v5);
+      
+      int sum = Utilities.CalculateSumOfMilesDriven(vehicles);
   message: <pass>
   languages: [csharp]
   severity: INFO
