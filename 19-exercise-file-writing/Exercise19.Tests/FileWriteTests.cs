@@ -13,7 +13,7 @@ namespace Exercise19.Tests
             string path = Path.Combine(Environment.CurrentDirectory, "vehicles.txt");
 
             // Prepare the data to write to the file
-            Vehicle v1 = new Vehicle(10, "BMW", "Red");
+            Vehicle v1 = new Vehicle(10, "Ford", "Red");
             Vehicle v2 = new Vehicle(45, "Toyota", "Blue");
             Vehicle v3 = new Vehicle(987, "Renault", "Black");
             Vehicle v4 = new Vehicle(45643, "Volkswagen", "Green");
@@ -51,7 +51,7 @@ namespace Exercise19.Tests
             Assert.NotNull(vehiclesFromFileList);
             Assert.Equal(5, vehiclesFromFileList.Count);
 
-            Assert.Equal("BMW", vehiclesFromFileList[0].Model);
+            Assert.Equal("Ford", vehiclesFromFileList[0].Model);
             Assert.Equal("Red", vehiclesFromFileList[0].Color);
             Assert.Equal(10, vehiclesFromFileList[0].CurrentMileage);
 
