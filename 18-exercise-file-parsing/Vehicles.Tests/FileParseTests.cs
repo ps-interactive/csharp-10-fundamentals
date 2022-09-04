@@ -30,7 +30,7 @@ namespace Vehicles.Tests
             Assert.NotNull(vehicles);
             Assert.Equal(3, vehicles.Count);
 
-            Assert.Equal("BMW", vehicles[0].Model);
+            Assert.Equal("Ford", vehicles[0].Model);
             Assert.Equal("Black", vehicles[0].Color);
             Assert.Equal(10, vehicles[0].CurrentMileage);
 
