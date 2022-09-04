@@ -2,7 +2,6 @@
 
 string output = Utilities.RemoveVowels(input);
 
-
-
+Console.WriteLine(output);  
 
 Console.ReadLine();
