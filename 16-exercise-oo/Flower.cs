@@ -2,14 +2,14 @@
 public class Flower
 {
     private int petals;
-    private int leafs;
+    private int leaves;
     private string name;
     private int height = 0;
 
-    public Flower(string name, int petals, int leafs)
+    public Flower(string name, int petals, int leaves)
     {
         Petals = petals;
-        Leafs = leafs;
+        Leaves = leaves;
         Name = name;
     }
 
@@ -22,16 +22,16 @@ public class Flower
         }
     }
 
-    public int Leafs
+    public int Leaves
     {
         get
         {
-            return leafs;
+            return leaves;
         }
 
         set
         {
-            leafs = value;
+            leaves = value;
         }
     }
 
@@ -60,6 +60,6 @@ public class Flower
 
     public string DisplayDetails()
     {
-        return $"Flower name: {Name} - Petals: {Petals} - Leafs: {Leafs} - Height: {Height}";
+        return $"Flower name: {Name} - Petals: {Petals} - Leaves: {Leaves} - Height: {Height}";
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 public class Daisy : Flower
 {
-    public Daisy(string name, int petals, int leafs) : base(name, petals, leafs)
+    public Daisy(string name, int petals, int leaves) : base(name, petals, leaves)
     {
     }
 
