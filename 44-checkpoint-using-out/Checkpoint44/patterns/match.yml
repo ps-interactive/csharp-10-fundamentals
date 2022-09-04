@@ -2,5 +2,5 @@ rules:
 - id: untitled_rule
   pattern: int bonus = employee.CalculateBonusAndTax(defaultBonus, out tax);
   message: <pass>
-  languages: [csharp]
+  languages: [generic]
   severity: INFO
