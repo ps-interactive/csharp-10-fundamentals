@@ -5,5 +5,5 @@ rules:
         "Hello, World!"
     - pattern-inside: Console.WriteLine(...);
   message: <pass>
-  languages: [generic]
+  languages: [csharp]
   severity: INFO
